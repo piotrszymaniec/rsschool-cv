@@ -11,3 +11,9 @@ I'm open minded, friendly and curious person. My goal is to build up frontend de
 ### Skills
 Javascript, css, html
 git/github, VSC, Windows/MacOS, gitkraken, Photoshop
+### Education
+Warsaw University of Science and Technology
+
+### Languages
+- Polish
+- English
