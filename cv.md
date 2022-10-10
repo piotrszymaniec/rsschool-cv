@@ -13,6 +13,8 @@ Javascript, css, html
 git/github, VSC, Windows/MacOS, gitkraken, Photoshop
 ### Education
 Warsaw University of Science and Technology
+Comprehensive Javascript 9 week course
+Code Reading Club - programmers monthly meetings in english developing code comprehension and analysis
 
 ### Languages
 - Polish
