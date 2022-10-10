@@ -9,12 +9,12 @@
 I'm open minded, friendly and curious person. My goal is to build up frontend development skill-set to join interesting projects and help my future team mates to the best of my abilities. Id like to grow as programmer and as a person with help of passionate programming enthusiasts. I look forward to working with you!
 ---
 ### Skills
-Javascript, css, html
-git/github, VSC, Windows/MacOS, gitkraken, Photoshop
+- Javascript, css, html
+- git/github, VSC, Windows/MacOS, gitkraken, Photoshop
 ### Education
-Warsaw University of Science and Technology
-Comprehensive Javascript 9 week course
-Code Reading Club - programmers monthly meetings in english developing code comprehension and analysis
+- Warsaw University of Science and Technology
+- Comprehensive Javascript 9 week course
+- Code Reading Club - programmers monthly meetings in english developing code comprehension and analysis
 
 ### Languages
 - Polish
