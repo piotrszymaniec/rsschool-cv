@@ -23,3 +23,9 @@ footer {
 .course-logo {
   height:30px;
 }
+
+.code-sample {
+  font-size:0.8em;
+  height:300px;
+  overflow: auto;
+}
