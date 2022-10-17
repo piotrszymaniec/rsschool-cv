@@ -63,7 +63,7 @@ export default class Tile {
   content: string
   item: IItem
   visited: boolean
-  onVisit: Signal<void> = new Signal()
+  onVisit: Signal&lt;void> = new Signal()
 
   constructor() {
     this.content  = "🌲"
@@ -78,7 +78,7 @@ export default class Tile {
     return this.item.type
   }
 
-  generateItem(itemsList:Array<IItem>):IItem {
+  generateItem(itemsList:Array&lt;IItem>):IItem {
     const item =  itemsList[Math.floor(Math.random()*itemsList.length)]
     return item
   }
@@ -91,14 +91,14 @@ export default class Tile {
     }
   }
 }
-      </pre>
+</pre>
     </div>
   </main>
   <footer>
     <a class="github-account" href="https://github.com/piotrszymaniec/">Piotr Szymaniec</a>
     <span>October 2022</span>
     <div class="rs-school">
-      <img class="course-logo" src="./assets/course-logo.png" alt="RS School course logo" />
+      <img class="course-logo" src="./assets/course-logo.png" alt="RS School course logo">
       <a class="course-link" href="https://rollingscopes.com/">Rolling Scopes School</a>
     </div>
   </footer>
