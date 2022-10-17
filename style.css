@@ -25,7 +25,11 @@ footer {
 }
 
 .code-sample {
+  display:block;
+  white-space: pre;
   font-size:0.8em;
   height:300px;
   overflow: auto;
+  background-color: #f3f3f3;
+  padding: 10px;
 }
