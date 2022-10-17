@@ -3,6 +3,9 @@
   width:1080px;
 }
 
+main {
+  display: flex;
+}
 footer {
   display:flex;
   justify-content: space-between;
