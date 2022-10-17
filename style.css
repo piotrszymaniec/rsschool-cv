@@ -1,9 +1,11 @@
-.github-account:before {
-
+.content-wrapper {
+  margin:0 auto;
+  width:1080px;
 }
+
 footer {
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .course-logo {
   height:30px;
