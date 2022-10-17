@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rss School CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="content-wrapper">
+  <header>
+    <h1>Piotr Szymaniec</h1>
+    <h2 class="job">Junior Frontend Developer</h2>
+  </header>
+  <main>
+    <nav>
+      <img src="./assets/piotrek.png">
+      <h2>Contact</h2>
+      <ul>
+        <li>+48 577 000 000</li>
+        <li><a href="mailto:piotr.szymaniec@gmail.com">piotr.szymaniec@gmail.com</a></li>
+        <li><a href="#">linked-in</a></li>
+        <li><a href="https://github.com/piotrszymaniec">github.com/piotrszymaniec</a></li>
+      </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git & github</li>
+        <li>Windows & MacOs</li>
+      </ul>
+      <h2>Languages</h2>
+      <ul>
+        <li>Polish</li>
+        <li>English</li>
+      </ul>
+    </nav>
+    <div class="content">
+      <h2>About me</h2>
+      <p>I'm open minded, friendly and curious person. My goal is to build up frontend development skill-set to join interesting projects and help my future team mates to the best of my abilities. Id like to grow as programmer and as a person with help of passionate programming enthusiasts. I look forward to working with you!</p>
+      <h2>Education</h2>
+      <ul>
+        <li>Warsaw University of Science and Technology</li>
+        <li>Code Reading Club - programmers monthly meetings in english developing code comprehension and analysis</li>
+        <li>Comprehensive Javascript 9 week course</li>
+      </ul>
+      <h2>Projects</h2>
+      <div>
+        <h3>Looty</h3>
+        <div>Google chrome extension: Item database for players of arpg game Path of Exile. Main feature is very fast search and display of results even if player has more then 10 000 items.</div>
+        <div class="project-details">
+          <span>written in scala.js html less</span>
+          <a href="https://github.com/piotrszymaniec/looty/">github link</a>
+        </div>
+      </div>
+      <h2>Code Sample</h2>
+      <pre class="code-sample">
+const Items = [
+  { type:'🍃', points: 0},
+  { type:'💰', points: 10},
+  { type:'🎁', points: 30},
+  { type:'💎', points: 50},
+]
+
+export interface IItem {
+  type: string;
+  points: number;
+}
+
+export default class Tile {
+  content: string
+  item: IItem
+  visited: boolean
+  onVisit: Signal&lt;void> = new Signal()
+
+  constructor() {
+    this.content  = "🌲"
+    this.visited = false
+    this.item = this.generateItem(Items)
+  }
+
+  getPoints():number {
+    return this.item.points
+  }
+  getAppearance():string {
+    return this.item.type
+  }
+
+  generateItem(itemsList:Array&lt;IItem>):IItem {
+    const item =  itemsList[Math.floor(Math.random()*itemsList.length)]
+    return item
+  }
+
+  visit() {
+    if (this.visited === false) {
+      this.visited = true
+      this.content = this.getAppearance()
+      this.onVisit.emit()
+    }
+  }
+}
+</pre>
+    </div>
+  </main>
+  <footer>
+    <a class="github-account" href="https://github.com/piotrszymaniec/">Piotr Szymaniec</a>
+    <span>October 2022</span>
+    <div class="rs-school">
+      <img class="course-logo" src="./assets/course-logo.png" alt="RS School course logo">
+      <a class="course-link" href="https://rollingscopes.com/">Rolling Scopes School</a>
+    </div>
+  </footer>
+  </div>
+</body>
+</html>
