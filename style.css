@@ -1,0 +1,10 @@
+.github-account:before {
+
+}
+footer {
+  display:flex;
+  justify-content: space-around;
+}
+.course-logo {
+  height:30px;
+}
